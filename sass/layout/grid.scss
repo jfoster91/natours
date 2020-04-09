@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;  // trick for centering block elements inside of another block element
     
 
@@ -13,7 +12,6 @@
 
     // attribute selector which will select all of the elements in which the class element starts with "col-"
     [class^="col-"] {
-        background-color: orange;
         float: left;
 
         // adds gutter to each child within the row. Don't need it on the last one in the row
