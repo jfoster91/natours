@@ -1,0 +1,9 @@
+
+// A clearfix is used for float layouts since floating elements collapse the height. A clearfix appends a pseudo-element after the element
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
