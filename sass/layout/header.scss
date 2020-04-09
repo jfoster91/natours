@@ -1,0 +1,31 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+      rgba($color-primary-light, 0.80), 
+      rgba($color-primary-dark, 0.80)), 
+    url(../img/hero.jpg);
+    background-size: cover;   /* Whatever the width of the viewport, it will always try and fit the element inside of the box */
+    background-position: top; /* Ensures that when the image is made smaller, the cropping starts at the bottom so that the top is still visible */
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    /* centering the text-box in the middle of the header */
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* This is needed because the beginning of the element will move to the center without it, not the center of the element */
+        text-align: center; /* also centers the button */
+    }
+}
