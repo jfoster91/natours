@@ -12,6 +12,15 @@
       rgba($color-primary-dark, 0.80)), 
     url(../img/nat-4.jpg);
     background-size: cover;
-    
+
+    // set up the skews background
+    transform: skewY(-7deg);
+
+    margin-top: -10rem;
+
+    // use the direct-child selector to ensure that everything that is a direct child of this div gets skewed back to normal
+    & > * {
+        transform: skewY(7deg);
+    }
 }
 
