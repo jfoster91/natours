@@ -3,7 +3,6 @@
     &:visited {        
         text-transform: uppercase;
         text-decoration: none;
-        color: grey;
         padding: 1.5rem 4rem;
         display: inline-block; /* Needed because buttons are normally inline and we want to treat it like a block */
         border-radius: 10rem;
@@ -46,6 +45,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
